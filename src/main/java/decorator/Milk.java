@@ -28,6 +28,15 @@ public class Milk extends CondimentDecorator {
      * @return - метод возвращает цену основного напитка с добавлением молока
      */
     public double cost() {
-        return this.beverage.cost() + .95;
+        double result = 0;
+        switch (this.beverage.getSize()) {
+            case TALL: result = this.beverage.cost() + 1.95;
+            break;
+            case VENTI: result = this.beverage.cost() + 7.95;
+            break;
+            case GRANDE: result = this.beverage.cost() + 15.95;
+            break;
+        }
+        return result;
     }
 }

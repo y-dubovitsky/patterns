@@ -17,5 +17,9 @@ public class MainDrink {
         System.out.println(drink.getDescription());
         // А вот тут проблема!
         System.out.println(drink.description);
+        // One more example:
+        Beverage bigCoffe = new Espresso();
+        bigCoffe.setSize(Beverage.Size.GRANDE);
+        System.out.println("Цена за кофе " + bigCoffe.cost());
     }
 }

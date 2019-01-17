@@ -10,6 +10,20 @@ public abstract class Beverage {
     String description = "Абсрактный напиток";
 
     /**
+     * Размер порции.
+     */
+    public enum Size { TALL, GRANDE, VENTI };
+    Size size = Size.TALL;
+
+    public void setSize(Size size) {
+        this.size = size;
+    }
+
+    public Size getSize() {
+        return this.size;
+    }
+
+    /**
      * Метод возвращает описание напитка.
      * @return
      */
