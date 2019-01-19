@@ -1,4 +1,4 @@
-package decorator;
+package decorator.my;
 
 /**
  * Класс мороженое, расширяющий абстрактный декоратор.

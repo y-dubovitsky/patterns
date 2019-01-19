@@ -1,4 +1,4 @@
-package decorator;
+package decorator.my;
 
 /**
  * Абстрактный декоратор класса, реализующего добавку к напитку.

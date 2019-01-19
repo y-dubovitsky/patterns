@@ -1,4 +1,4 @@
-package decorator;
+package decorator.my;
 
 /**
  * Главный класс для запуска приложения.

@@ -1,4 +1,4 @@
-package decorator;
+package decorator.my;
 
 /**
  * Класс БАЗОВОГО напитка- Эспрессо.
