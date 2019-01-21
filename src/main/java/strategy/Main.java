@@ -11,6 +11,7 @@ public class Main {
         //
         Duck duck1 = new ModelDuck();
         duck1.performQuack();
+        // Меняется поведение в процессе выполнения
         duck1.setFlyBehavivor(new FlyLikaAG6());
         duck1.performFly();
     }
