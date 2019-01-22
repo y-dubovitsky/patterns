@@ -20,7 +20,7 @@ public class Chocolate {
      * Создает единственный объект класса Chocolate, если такой объект уже существует,
      * то возвращает его.
      */
-    public static Chocolate getInstance() {
+    public static synchronized Chocolate getInstance() {
         if (chocolateInstance == null) {
             chocolateInstance = new Chocolate();
         }
