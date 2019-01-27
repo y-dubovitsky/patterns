@@ -1,8 +1,8 @@
-package strategy;
+package strategy.bird;
 
 /**
  * Интерфейс отвечающий за поведение.
  */
-public interface QuackBehavivor {
-    void quack();
+public interface FlyBehavivor {
+    void fly();
 }

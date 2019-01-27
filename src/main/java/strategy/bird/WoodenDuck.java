@@ -1,4 +1,4 @@
-package strategy;
+package strategy.bird;
 
 /**
  * Конкретный класс, реализующий деревянную утку.

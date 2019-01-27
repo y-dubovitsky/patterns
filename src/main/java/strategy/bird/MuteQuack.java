@@ -1,4 +1,4 @@
-package strategy;
+package strategy.bird;
 
 /**
  * Класс, реализующий поведение, золоженное в интерфейсе.

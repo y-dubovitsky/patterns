@@ -1,11 +1,11 @@
-package strategy;
+package strategy.bird;
 
 /**
  * Класс, реализующий поведение, золоженное в интерфейсе.
  */
-public class Squeak implements QuackBehavivor {
+public class Quack implements QuackBehavivor {
 
     public void quack() {
-        System.out.println("Squeak! squuuuuueak!");
+        System.out.println("Hello, my friend! I say: quack! quack! quack!");
     }
 }
