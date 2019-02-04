@@ -13,14 +13,13 @@ public class Client {
         DinerMenu dinerMenu = new DinerMenu();
         MenuItem[] lunchItems = dinerMenu.getMenuItems();
 
-        for (int i = 0; i < breakfastItems.size(); i++) {
-            MenuItem menuItem = breakfastItems.get(i);
+        for (MenuItem menuItem : breakfastItems) {
             System.out.print(menuItem.getName() + " ");
             System.out.println(menuItem.getPrice() + " ");
             System.out.println(menuItem.getDescription());
         }
-        for (int i = 0; i < lunchItems.length; i++) {
-            MenuItem menuItem = lunchItems[i];
+        
+        for (MenuItem menuItem : lunchItems) {
             System.out.print(menuItem.getName() + " ");
             System.out.println(menuItem.getPrice() + " ");
             System.out.println(menuItem.getDescription());
