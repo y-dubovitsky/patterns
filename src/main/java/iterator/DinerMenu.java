@@ -41,11 +41,9 @@ public class DinerMenu {
     }
 
     /**
-     * Возвращает все меню в виде массива.
-     * @return
+     * Метод возвращает Итератор для DinerMenu
      */
-    public MenuItem[] getMenuItems() {
-        return menuItems;
+    public Iterator createIterator() {
+        return new DinerMenuIterator(menuItems);
     }
-// other menu methods here
 }

@@ -41,8 +41,10 @@ public class PancakeHouseMenu {
         menuItems.add(menuItem);
     }
 
-    public ArrayList<MenuItem> getMenuItems() {
-        return menuItems;
+    /**
+     * Итератор
+     */
+    public Iterator createIterator() {
+        return new PancakeHouseMenuIterator(this.menuItems);
     }
-// другие методы
 }
