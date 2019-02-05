@@ -1,26 +1,32 @@
 package iterator;
 
+import java.util.Iterator;
+
 /**
  * Класс-клиент
  */
 public class Client {
 
-    PancakeHouseMenu pancakeHouseMenu;
-    DinerMenu dinerMenu;
+    Menu pancakeHouseMenu;
+    Menu dinerMenu;
 
-    public Client(PancakeHouseMenu pancakeHouseMenu, DinerMenu dinerMenu) {
+    public Client(Menu pancakeHouseMenu, Menu dinerMenu) {
         this.dinerMenu = dinerMenu;
         this.pancakeHouseMenu = pancakeHouseMenu;
     }
 
-    Iterator dinerIterator() {
+    java.util.Iterator<MenuItem> dinerIterator() {
         return dinerMenu.createIterator();
     }
 
-    Iterator pancakeIterator() {
+    java.util.Iterator<MenuItem> pancakeIterator() {
         return pancakeHouseMenu.createIterator();
     }
 
+    /**
+     * Полиморфный перебор
+     * @param iterator
+     */
     void showMenu(Iterator iterator) {
         while(iterator.hasNext()) {
             MenuItem menuItem = (MenuItem)iterator.next();

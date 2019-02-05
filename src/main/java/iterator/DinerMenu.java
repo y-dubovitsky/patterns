@@ -1,9 +1,11 @@
 package iterator;
 
+import java.util.Iterator;
+
 /**
  * Меню обеда
  */
-public class DinerMenu {
+public class DinerMenu implements Menu {
 
     static final int MAX_ITEMS = 4;
 
@@ -43,7 +45,7 @@ public class DinerMenu {
     /**
      * Метод возвращает Итератор для DinerMenu
      */
-    public Iterator createIterator() {
+    public Iterator<MenuItem> createIterator() {
         return new DinerMenuIterator(menuItems);
     }
 }

@@ -1,8 +1,9 @@
 package iterator;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
-public class PancakeHouseMenu {
+public class PancakeHouseMenu implements Menu{
 
     /**
      * Список с элементами меню.
@@ -42,9 +43,9 @@ public class PancakeHouseMenu {
     }
 
     /**
-     * Итератор
+     * Итератор из библиотеки java.
      */
-    public Iterator createIterator() {
-        return new PancakeHouseMenuIterator(this.menuItems);
+    public Iterator<MenuItem> createIterator() {
+        return menuItems.iterator();
     }
 }
