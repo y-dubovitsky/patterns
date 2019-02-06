@@ -9,10 +9,12 @@ public class Client {
 
     Menu pancakeHouseMenu;
     Menu dinerMenu;
+    Menu cafeMenu;
 
-    public Client(Menu pancakeHouseMenu, Menu dinerMenu) {
+    public Client(Menu pancakeHouseMenu, Menu dinerMenu, Menu cafeMenu) {
         this.dinerMenu = dinerMenu;
         this.pancakeHouseMenu = pancakeHouseMenu;
+        this.cafeMenu = cafeMenu;
     }
 
     java.util.Iterator<MenuItem> dinerIterator() {
@@ -22,6 +24,8 @@ public class Client {
     java.util.Iterator<MenuItem> pancakeIterator() {
         return pancakeHouseMenu.createIterator();
     }
+
+    Iterator<MenuItem> cafeIterator() { return cafeMenu.createIterator();}
 
     /**
      * Полиморфный перебор
