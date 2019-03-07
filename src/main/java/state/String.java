@@ -1,6 +1,6 @@
 package state;
 
-public class State {
+public class String {
     // Нет шариков
     final static int SOLD_OUT = 0;
 
@@ -22,7 +22,7 @@ public class State {
                 System.out.println("Введите монетку");
             }
             case HAS_QUARTER : {
-                state =
+                //state =
             }
             case SOLD : {
                 System.out.println("Все шарики проданы!");
