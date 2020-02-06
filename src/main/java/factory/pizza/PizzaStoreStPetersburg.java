@@ -1,9 +1,9 @@
-package factory.my;
+package factory.pizza;
 
 /**
- * Конкретный создатель (класс), реализующий московскую пиццерию.
+ * Конкретный класс, реализующий петербургскую пиццерию.
  */
-public class PizzaStoreMoscow extends PizzaStore{
+public class PizzaStoreStPetersburg extends PizzaStore {
 
     /**
      * Фабричный метод изготовления пиццы
@@ -13,7 +13,7 @@ public class PizzaStoreMoscow extends PizzaStore{
     public Pizza pizzaFactory(Type type) {
         Pizza pizza = null;
         if (type.getType().equals("Сырная")) {
-            pizza = new CheesePizzaMoscow(new CheesePizza()); // Применяется Декоратор
+            pizza = new CheesePizza();
         }
         if (type.getType().equals("Мясная")) {
             pizza = new MeatPizza();

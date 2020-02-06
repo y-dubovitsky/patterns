@@ -1,4 +1,4 @@
-package factory.my;
+package factory.pizza;
 
 /**
  * Тестируем нашу фабрику пиццы.

@@ -1,4 +1,4 @@
-package factory.my;
+package factory.pizza;
 
 /**
  * Мясная пицца; Можно сделать абстрактным классом.
